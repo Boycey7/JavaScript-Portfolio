@@ -1,0 +1,11 @@
+/* @screen lg {
+    .about {
+        @apply p-32;
+    }
+} */
+
+/* 
+@layer components {
+   
+    }
+  } */

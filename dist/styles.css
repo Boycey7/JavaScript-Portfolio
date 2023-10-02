@@ -1,0 +1,42 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap');
+
+
+
+/* h3 {
+    color: #2d2e32;
+  }
+
+  /* .hero-text {
+    @apply border-box font-poppins block text-center mt-5 mb-5 text-[55px] leading-[66px] font-bold text-custom-gray
+  } */
+
+  /* .hero-main {
+    @apply items-center box-border flex font-poppins text-xs h-[350px] justify-center mb-0 ml-0 mr-0 mt-0 pb-0 pl-0 pr-0 pt-0 relative space-x-25 space-y-25 w-[889px];
+  }
+  
+.hero {
+  @apply bg-gray-100 flex flex-col h-screen relative w-full
+
+} */ */
+
+/* @media (max-width: 900px) {
+  .hero {
+      height:auto;
+      padding: 11rem 0
+  }
+} */
+
+
+.profile-pic {
+  background-image: url('../images/erik-karits-QM_ucH8w3I8-unsplash.jpg');
+  background-size: cover;   /* This will cover the entire div */
+  background-position: center; /* Adjust this value if you want to focus on a particular portion of the image */
+  background-repeat: no-repeat; /* To ensure the image doesn't repeat */
+}
