@@ -1,4 +1,4 @@
-@import 'tailwindcss/base';
+/* @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
@@ -39,4 +39,4 @@
   background-size: cover;   /* This will cover the entire div */
   background-position: center; /* Adjust this value if you want to focus on a particular portion of the image */
   background-repeat: no-repeat; /* To ensure the image doesn't repeat */
-}
+} */
