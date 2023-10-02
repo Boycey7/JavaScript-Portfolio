@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="output.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  
 <!-- Navbar -->
-<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="logo" class="flex items-center">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Jake.dev</span>
+<nav class="fixed top-0 left-0 z-20 w-full bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-600">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
+    <a href="#" class="flex items-center">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap text-custom-gray md:hover:text-custom-teal dark:text-white font-poppins">Jake Developer</span>
     </a>
     <div class="flex md:order-2">
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -22,38 +26,168 @@
       </button>
     </div>
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="#home" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+          <a href="#home" class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:hover:text-custom-teal md:p-0 md:dark:text-custom-teal" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#about" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          <a href="#about" class="navbar-text">About</a>
         </li>
         <li>
-          <a href="#projects" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+          <a href="#projects" class="navbar-text">Projects</a>
         </li>
         <li>
-          <a href="#contact" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          <a href="#contact" class="navbar-text">Contact</a>
         </li>
       </ul>
     </div>
     </div>
   </nav>
-  
-    <!-- Main content -->
-    <div class="container my-32">
-        <div class="flex items-center">
-          <!-- Profile picture -->
-          <img src="image.jpg" alt="Profile Picture" class="rounded-full h-20 w-20 mr-4">
-          
-          <!-- Text content -->
-          <div>
-            <h1 class="text-2xl font-bold">Jake Boyce - Web Developer</h1>
-            <p class="text-gray-700">Hi, I'm Jake Boyce. A passionate Web Developer based in Sheffield, England.</p>
+  <section id="home" class="hero center-content">
+  <div class="container my-32">
+    <div class="flex flex-col items-center">
+       <!-- Welcome Text -->
+    <h1 class="transition-opacity duration-500 ease-out opacity-100 hero-text">
+      Welcome to my portfolio
+  </h1>
+  <div id="mainContent" class="hidden transition-opacity duration-500 ease-out opacity-0 delay-50">
+        <!-- Profile Picture on Right for Desktop / Bottom for Mobile -->
+    <div class="flex justify-center">
+      <img src="../images/erik-karits-QM_ucH8w3I8-unsplash.jpg" alt="Profile Picture" class="w-32 h-32 mr-4 rounded-full">
+  </div>
+        <!-- Text content -->
+        
+            <h1 class="hero-text">Jake Boyce- Web Developer</h1>
+
+            <div class="flex justify-center">
+              <p class="inline-flex text-xl font-medium text-gray-700 font-mulish lg:mb-20">Hi, I'm Jake Boyce. A Web Developer based in Sheffield, England.</p>
+              <img src="../images/ukflag.png" alt="UK Flag" class="w-8 h-8 mr-4 rounded-full">
           </div>
+            <span class="flex items-center justify-center">
+            <!-- LinkedIn Icon Link -->
+            <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/jake-boyce-dev/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-flex tabler-icon tabler-icon-brand-linkedin hover:stroke-custom-teal">
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                    <path d="M8 11l0 5"></path>
+                    <path d="M8 8l0 .01"></path>
+                    <path d="M12 16l0 -5"></path>
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                </svg>
+            </a>
+
+	    <!-- GitHub Icon Link -->
+                <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/Boycey7">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-flex tabler-icon tabler-icon-brand-github hover:stroke-custom-teal">
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                    </svg>
+                </a>
+           
+          </span>
+
         </div>
+        </div>
+    </div>
+  </section>
+  <section class="about" id="about" class="py-12 bg-gray-50">
+    <div class="container px-4 mx-auto">
+
+        <!-- Image and Text Container -->
+        <div class="flex flex-wrap items-center justify-center">
+
+          <!-- Image side -->
+<div class="flex justify-center w-full mb-8 md:w-1/2 md:mb-0 about-content">
+  <!-- Main Image -->
+  <img src="../images/unsplash-image.png" alt="You" class="w-3/4 mx-auto rounded-lg shadow-lg md:mr-8 md:w-full">
+</div>
+
+
+
+            <!-- Text side -->
+            <div class="w-full p-4 text-center bg-white rounded-lg shadow-lg md:w-1/2 md:text-left text-side">
+                <h3 class="mb-4 text-3xl font-bold font-poppins text-custom-teal">About me</h3>
+                <h4 class="mb-6 text-xl font-semibold font-mulish">A Web Developer <br> based in Sheffield, England📍</h4>
+                <p class="leading-relaxed text-gray-700">
+                    Hello, I'm Jake Boyce. I'm a passionate web developer residing in Sheffield, England. I pride myself on creating user-friendly and efficient web platforms that have a touch of elegance. With a strong foundation in JavaScript, CSS, and HTML, I'm skilled in key frameworks and libraries such as React, Next.js, Node, and Tailwind. My journey into web development began after my studies in games development at the University of Sheffield. This multifaceted background allows me to offer both technical expertise and versatile skills to your projects.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-12 hero projects" id="projects">
+  <div class="container px-4 mx-auto">
+    <div class="mb-8 text-center project-text">
+        <p class="text-xl text-gray-600">Portfolio</p>
+        <h3 class="text-3xl font-semibold">These are my projects!</h3>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+
+        <!-- Project Card 1 -->
+        <a href="https://boycey7.github.io/Text-Adventure-Game/" class="block p-16 transition-shadow duration-300 bg-white shadow-lg rounded-xl hover:shadow-xl">
+            <img src="../images/project1-image.jpg" alt="Project 1 Image" class="object-cover w-full h-48 mb-4 rounded">
+            <h4 class="mb-4 text-2xl font-bold font-poppins">Zork Style Text Based Game</h4>
+            <p class="text-gray-700 font-mulish">A text-based adventure game, in which you play the role of an vampire hunter starting in a dark forest surronding a castle housing the great vampire, Dracula. The game is coded with vanilla JavaScript.
+            </p>
+        </a>
+
+        <!-- Project Card 2 -->
+        <a href="https://boycey7.github.io/Caesar-Cipher-Project/" class="block p-16 transition-shadow duration-300 bg-white shadow-lg rounded-xl hover:shadow-xl">
+            <img src="../images/project2-image.jpg" alt="Project 2 Image" class="object-cover w-full mb-4 rounded">
+            <h4 class="mb-4 text-2xl font-bold font-poppins">Caesar Cipher Project</h4>
+            <p class="text-gray-700 font-mulish">A programming project I undertook at The Developer Academy. This web app accepts a message from the user and outputs its encoded version.
+
+              Built with JavaScript, the app modifies each letter of the input message by shifting it a specified number of positions in the alphabet, as determined by the user. I further enhanced the app by incorporating a decrypt function, enabling the decoding of coded messages.
+              
+              I utilized Tailwind for styling, achieving a clean and modern appearance.</p>
+        </a>
+
+        <!-- Project Card 3 -->
+        <a href="https://boycey7.github.io/Quiz-Project/" class="block p-16 transition-shadow duration-300 bg-white shadow-lg rounded-xl hover:shadow-xl">
+            <img src="../images/project3-image.jpg" alt="Project 3 Image" class="object-cover w-full mb-4 rounded">
+            <h4 class="mb-4 text-2xl font-bold font-poppins">Lord Of The Rings Quiz</h4>
+            <p class="text-gray-700 font-mulish">A simple guess the characters Lord Of The Rings Quiz done in JavaScript</p>
+        </a>
+        
+    </div>
+</div>
+</section>
+<section id="contact" class="py-12 bg-white">
+  <div class="container px-4 mx-auto">
+      <div class="mb-8 text-center">
+          <h3 class="text-3xl font-semibold text-custom-teal font-poppins">Contact Me</h3>
+          <p class="text-xl text-gray-600 font-mulish">Let's talk!</p>
       </div>
+
+      <div class="flex justify-center">
+          <form action="your_backend_endpoint" method="post" class="w-full max-w-md">
+              <div class="mb-6">
+                  <label for="name" class="block mb-2 text-sm font-bold text-gray-700 font-mulish">Name:</label>
+                  <input type="text" name="name" id="name" placeholder="Your Name" required class="w-full px-4 py-2 border rounded-md">
+              </div>
+              <div class="mb-6">
+                  <label for="email" class="block mb-2 text-sm font-bold text-gray-700 font-mulish">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="Your Email" required class="w-full px-4 py-2 border rounded-md">
+              </div>
+              <div class="mb-6">
+                  <label for="message" class="block mb-2 text-sm font-bold text-gray-700 font-mulish">Message:</label>
+                  <textarea name="message" id="message" rows="4" placeholder="Your Message" required class="w-full px-4 py-2 border rounded-md"></textarea>
+              </div>
+              <div class="text-center">
+                  <button type="submit" class="px-4 py-2 font-bold text-white bg-gray-700 rounded-md hover:bg-custom-teal font-poppins">Send Message</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+
+
 
     <script src="index.js"></script>
 </body>
 </html>
+
+
